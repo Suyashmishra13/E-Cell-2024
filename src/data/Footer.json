@@ -1,0 +1,73 @@
+{
+    "description": "Lorem ipsum dolor sit amet. Est commodi voluptatem quo rerum eligendi id adipisci velit? Qui ipsa explicabo nam dolor maiores ut optio porro quo maiores exercitationem. Est corrupti enim et consequatur labore eos explicabo",
+    "facebook": "https://www.facebook.com/",
+    "twitter": "https://twitter.com/",
+    "instagram": "https://www.instagram.com/",
+    "pages1" : [
+        {
+            "title": "About Us",
+            "link": "/about-us"
+        },
+        {
+            "title": "Events",
+            "link": "/events"
+        },
+        {
+            "title": "Recent Events",
+            "link": "/events/#recent-events"
+        },
+        {
+            "title": "Upcoming Events",
+            "link": "/events/#upcoming-events"
+        },
+        {
+            "title": "Blogs",
+            "link": "/blogs"
+        },
+        {
+            "title": "Gallery",
+            "link": "/gallery"
+        }
+    ],
+    "pages2" : [
+        {
+            "title": "About Us",
+            "link": "/about-us"
+        },
+        {
+            "title": "Events",
+            "link": "/events"
+        },
+        {
+            "title": "Recent Events",
+            "link": "/events/#recent-events"
+        },
+        {
+            "title": "Upcoming Events",
+            "link": "/events/#upcoming-events"
+        },
+        {
+            "title": "Blogs",
+            "link": "/blogs"
+        },
+        {
+            "title": "Gallery",
+            "link": "/gallery"
+        }
+    ],
+    "contact_info":[
+        {
+            "title": "Address",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos."
+        },
+        {
+            "title": "Phone",
+            "description": "+91 1234567890"
+        },
+        {
+            "title": "Email",
+            "description": "example.com"
+        }
+    ],
+    "copyright": "E-Cell IIT Indore. All Rights Reserved."
+}

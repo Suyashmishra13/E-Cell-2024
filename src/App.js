@@ -1,9 +1,10 @@
+// import Footer from "./pages/Footer";
+// import FooterData from "./data/Footer.json";
+
 function App() {
   return (
     <div className="App">
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+     {/* <Footer {...FooterData}/> */}
     </div>
   );
 }
