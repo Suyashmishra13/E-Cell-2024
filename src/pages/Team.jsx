@@ -11,43 +11,64 @@ const Team = () => {
                 <div className={TeamCss.header}>
                     <h1><span className={TeamCss.text_blue}>Our</span><span className={TeamCss.text_white}> Team</span></h1>
                 </div>
+                <section>
 
-                <div className='mx-auto grid grid-cols-3 gap-8 '>
+                    <div className='flex felx-col  justify-between py-5   '>
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                    </div>
+                </section>
+                <section>
 
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                </div>
-                <div className='grid grid-cols-1 '>
-                    <PeopleCard />
-                </div>
-                <div className='grid grid-cols-1 gap-8'>
-                    <PeopleCard />
-                </div>
-                <div className='grid grid-cols-4 gap-8'>
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                </div>
-                <div className='grid grid-cols-4 gap-8'>
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                </div>
-                <div className='grid grid-cols-4 gap-8'>
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                </div>
-                <div className='grid grid-cols-4 gap-8'>
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                    <PeopleCard />
-                </div>
+                    <div className=' flex m-auto w-1/3'>
+                        <PeopleCard />
+                    </div>
+                    <div className=' flex m-auto w-1/3'>
+                        <PeopleCard />
+                    </div>
+                </section>
+                <section>
+
+                    <div className='flex flex-auto justify-between py-5 '>
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                    </div>
+
+                    <h3 className='text-white text-center font-bold pt-10'>Marketing Team</h3>
+                    <div className='flex flex-auto justify-between py-5 '>
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                    </div>
+                    <h3 className='text-white text-center font-bold pt-10'>Social Media Team</h3>
+
+                    <div className='flex flex-auto justify-between py-5 '>
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                    </div>
+                    <h3 className='text-white text-center font-bold pt-10'>Content Team</h3>
+
+                    <div className='flex flex-auto justify-between py-5 '>
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                    </div>
+                    <h3 className='text-white text-center font-bold pt-10'>Web Development Team</h3>
+
+                    <div className='flex flex-auto justify-between py-5 '>
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                        <PeopleCard />
+                    </div>
+                </section>
 
 
 

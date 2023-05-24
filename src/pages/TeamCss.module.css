@@ -1,11 +1,12 @@
 body {
-    background-color: #1e1e1e;
+    background: #1B262C;
 }
 
 
 .header {
     font-size: 5rem;
     text-align: center;
+
 }
 
 .text_blue {
@@ -21,7 +22,7 @@ body {
 }
 
 .mainContainer {
-
+    margin: 4%;
     width: 100%;
 
 }
