@@ -1,5 +1,5 @@
 import "./App.css";
-import Team from "./pages/Team";
+// import Team from "./pages/Team";
 // import Footer from "./pages/Footer";
 // import Blogs from "./pages/Blogs";
 
@@ -10,7 +10,7 @@ import Team from "./pages/Team";
 function App() {
   return (
     <div className="App">
-      <Team />
+      {/* <Team /> */}
       {/* <Blogs {...BlogsDataData}/> */}
       {/* <Footer {...FooterData}/> */}
     </div>
