@@ -1,0 +1,55 @@
+/* Banner CSS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@keyframes fadeInFromLeft {
+	from {
+	  opacity: 1;
+	  transform: translateX(-50vw);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+
+  @keyframes fadeInFromRight {
+	from {
+	  opacity: 0;
+	  transform: translateX(20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes fadeInFromBottom {
+	from {
+	  opacity: 1;
+	  transform: translateY(50vh);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .bannerTagline {
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-name: fadeInFromLeft;
+  }
+  
+  .bannerHeading {
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-name: fadeInFromBottom;
+  }
+
+  .socialMedia {
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	animation-name: fadeInFromRight;
+  }
+  
