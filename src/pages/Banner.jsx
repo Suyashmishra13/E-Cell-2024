@@ -19,7 +19,7 @@ export default function Banner(props) {
       {/* Banner Text Block */}
 
       <div className="relative isolate px-6 pt-14 lg:px-8 z-20">
-        <div className="mx-auto max-w-2xl h-[60vh] py-32 sm:py-48 lg:py-56 overflow-hidden">
+        <div className="mx-auto max-w-2xl h-[60vh] py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <p className="bannerTagline font-['Nunito'] font-bold text-[35px] -tracking-[0.04em] leading-[30px] text-[#1B262C]">
               Spreading the sprit of Entreprenuership
