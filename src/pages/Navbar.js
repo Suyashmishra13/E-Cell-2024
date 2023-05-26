@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Navbar.css";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
