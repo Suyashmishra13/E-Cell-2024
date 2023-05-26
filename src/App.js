@@ -3,6 +3,7 @@ import "./App.css";
 // import Team from "./pages/Team";
 // import Footer from "./pages/Footer";
 // import Blogs from "./pages/Blogs";
+import Gallery from "./pages/Gallery";
 
 // import BannerData from "./data/Banner.json";
 // import BlogsData from './data/Blogs.json';
