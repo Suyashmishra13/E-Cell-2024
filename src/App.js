@@ -15,6 +15,7 @@ function App() {
       {/* <Team /> */}
       {/* <Blogs/> */}
       {/* <Footer {...FooterData}/> */}
+      <Gallery />
     </div>
   );
 }
