@@ -4,6 +4,7 @@ import "./App.css";
 // import Footer from "./pages/Footer";
 // import Blogs from "./pages/Blogs";
 import Gallery from "./pages/Gallery";
+import Navbar from "./pages/Navbar";
 
 // import BannerData from "./data/Banner.json";
 // import BlogsData from './data/Blogs.json';
@@ -11,6 +12,10 @@ import Gallery from "./pages/Gallery";
 
 function App() {
   return (
+    <div className="container mx-auto mb-8 px-8">
+      <Navbar />
+     
+      </div>
     <div className="App">
       {/* <Banner {...BannerData}/> */}
       {/* <Team /> */}
