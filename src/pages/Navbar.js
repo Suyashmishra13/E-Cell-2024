@@ -6,9 +6,9 @@ export default function Header() {
 
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-8">
-      <a href="/">
+      
       <img src="./ecell.png" alt="Logo" />
-      </a>
+     
       <nav>
   
         <section className="MOBILE-MENU flex lg:hidden">
@@ -98,6 +98,42 @@ export default function Header() {
         justify-content: space-evenly;
         align-items: center;
       }
+      a {
+    background-image: linear-gradient(
+    to right,
+    #39acd5,
+    #39acd5 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: '';
+  background: #0190c9;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before {
+  width:100%;
+}
     `}</style>
     </div>
   );
