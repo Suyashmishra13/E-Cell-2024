@@ -3,7 +3,7 @@ import img from './Screenshot (139).png';
 
 export default function Blogs() {
   return (
-    <div className='bg-gradient-to-t from-[#0F4F7A] to-[#DDDDDD] translate-y-[-16%]'>
+    <div className='bg-gradient-to-t from-[#0F4F7A] to-[#DDDDDD] translate-y-[-8rem]'>
         <div className = "flex-col min-h-screen items-center justify-center ">
          <div className='flex items-center justify-center text-center gap-4 text-6xl font-bold  my-32 translate-y-[100%] drop-shadow-lg transition-transform duration-500 transform translate-x-0'>
            <div className='drop-shadow-lg'>OUR</div>

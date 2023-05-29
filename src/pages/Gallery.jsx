@@ -16,15 +16,15 @@ import { EffectCoverflow, Pagination ,Navigation ,Autoplay} from 'swiper';
 
 export default function Gallery() {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 600;
+  const breakpoint = 800;
   React.useEffect(() => {
     
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
   return (
 <>
-<div className='h-90'>
-        <h1 className="heading">GALLER<span className="">Y</span></h1>
+<div className='gallery_container'>
+        <h1 className="heading mt-0 p-16">GALLER<span className="">Y</span></h1>
     <div className='container'>
 
         <Swiper
@@ -53,12 +53,12 @@ export default function Gallery() {
             <SwiperSlide>
               {({ isActive }) => (
                 
-                isActive ?<><div className='info'>
+                isActive ?<><div className='info rounded-3xl'>
                     <h1 className="info_heading">{info.heading}</h1>
                     <p className='info_data'>{info.slide_data}</p>
                     <a href='#'>Know More...</a>
                   </div> 
-                  <img src={/*process.env.PUBLIC_URL +*/ info.image_url} alt="images" className='gallery_img active_slide w-full ' /></> :  <img src={process.env.PUBLIC_URL + info.image_url} alt="images" className='gallery_img lg:w-full '/>
+                  <img src={/*process.env.PUBLIC_URL +*/ info.image_url} alt="images" className='gallery_img active_slide w-full xl:h-[400px] lg:h-[350px] object-cover rounded-3xl ' /></> :  <img src={process.env.PUBLIC_URL + info.image_url} alt="images" className='gallery_img w-full xl:h-[400px] lg:h-[300px] object-cover rounded-3xl '/>
                 // <div className='info'>Current slide is {isActive ? 'active' : 'not active'}</div>
               )}
               
