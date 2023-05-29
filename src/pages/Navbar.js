@@ -5,7 +5,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8">
+    <div className="flex items-center justify-between border-b border-gray-400 py-8 bg-transparent absolute">
       
       <img src="./ecell.png" alt="Logo" />
      
@@ -13,7 +13,7 @@ export default function Header() {
   
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="HAMBURGER-ICON space-y-2 z-50"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
               
