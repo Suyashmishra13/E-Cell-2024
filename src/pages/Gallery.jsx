@@ -1,7 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {FaArrowLeft , FaArrowRight} from "react-icons/fa";
-import "../App.css"
+// import "../App.css"
+import "../css/Gallery.css"
 import gallery_data from '../data/Gallery';
 
 import 'swiper/css';
@@ -22,6 +23,7 @@ export default function Gallery() {
   }, []);
   return (
 <>
+<div className='h-90'>
         <h1 className="heading">GALLER<span className="">Y</span></h1>
     <div className='container'>
 
@@ -74,6 +76,7 @@ export default function Gallery() {
         <div className="swiper-pagination"></div>
       </div>
       </Swiper>
+    </div>
     </div>
     </>
   )
