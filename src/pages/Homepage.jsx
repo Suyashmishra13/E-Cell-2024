@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Banner from './Banner';
+import About from './About';
 import Blogs from "./Blogs";
 import Gallery from "./Gallery";
 
@@ -11,6 +12,7 @@ export default function Homepage(){
     return(
         <>
         <Banner {...BannerData}/>
+        <About />
         <Gallery/>
         <Blogs/>
         </>
