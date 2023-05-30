@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-@keyframes fadeInFromLeft {
+@keyframes slideInFromLeft {
 	from {
 	  opacity: 1;
 	  transform: translateX(-50vw);
@@ -24,7 +24,7 @@
 	}
   }
   
-  @keyframes fadeInFromBottom {
+  @keyframes slideInFromBottom {
 	from {
 	  opacity: 1;
 	  transform: translateY(50vh);
@@ -38,13 +38,13 @@
   .bannerTagline {
 	animation-duration: 1.5s;
 	animation-fill-mode: both;
-	animation-name: fadeInFromLeft;
+	animation-name: slideInFromLeft;
   }
   
   .bannerHeading {
 	animation-duration: 1.5s;
 	animation-fill-mode: both;
-	animation-name: fadeInFromBottom;
+	animation-name: slideInFromBottom;
   }
 
   .socialMedia {

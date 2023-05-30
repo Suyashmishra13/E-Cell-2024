@@ -11,10 +11,10 @@ import FooterData from "./data/Footer.json";
 function App() {
   return (
     <>
-      <div className="container mx-auto mb-8 px-8">
-        <Navbar />
+      {/* <div className="container mx-auto mb-8 px-8"> */}
+        {/* <Navbar /> */}
 
-      </div>
+      {/* </div> */}
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Homepage />} />

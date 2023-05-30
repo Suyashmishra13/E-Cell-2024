@@ -20,11 +20,11 @@ export default function Banner(props) {
 
       <div className="relative isolate px-6 pt-14 lg:px-8 z-20">
         <div className="mx-auto max-w-2xl h-[60vh] py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
+          <div className="text-center overflow-hidden">
             <p className="bannerTagline font-['Nunito'] font-bold text-[35px] -tracking-[0.04em] leading-[30px] text-[#1B262C]">
               Spreading the sprit of Entreprenuership
             </p>
-            <h1 className="bannerHeading pt-4 font-['Inter'] font-bold text-[50px] -tracking-[0.04em] leading-[60px] text-black capitalize">
+            <h1 className="bannerHeading pt-4 font-['Inter'] font-bold text-[45px] md:text-[50px] -tracking-[0.04em] leading-[60px] text-black capitalize">
               Entrepreneurship Cell
               <br />
               IIT <span className="text-[#0060A1]"> Indore</span>
@@ -35,7 +35,7 @@ export default function Banner(props) {
 
       {/* Social Media Block */}
 
-      <div className="socialMedia hidden lg:block absolute right-0 bottom-28 mr-6 z-50">
+      <div className="socialMedia absolute right-0 bottom-28 mr-6 z-50 invisible md:visible">
         <div className="flex flex-col space-y-3">
           <a href={props.linkedin} target="_blank">
             <div className="w-[54px] h-[54px] rounded-full bg-[#D9D9D9] hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
