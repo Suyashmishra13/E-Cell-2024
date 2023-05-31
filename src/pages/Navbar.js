@@ -5,7 +5,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8 bg-transparent absolute">
+    <div className="flex items-center justify-between border-b border-gray-400 py-8 bg-transparent absolute z-50 w-full px-8">
       
       <img src="./ecell.png" alt="Logo" />
      

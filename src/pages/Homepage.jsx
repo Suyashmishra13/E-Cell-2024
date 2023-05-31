@@ -4,6 +4,8 @@ import Banner from './Banner';
 import About from './About';
 import Blogs from "./Blogs";
 import Gallery from "./Gallery";
+import Navbar from "./Navbar";
+
 
 import BannerData from "../data/Banner.json";
 // import BlogsData from './data/Blogs.json';
@@ -11,6 +13,10 @@ import BannerData from "../data/Banner.json";
 export default function Homepage(){
     return(
         <>
+        {/* <div className="container mx-auto mb-8 px-8 z-100">  */}
+        <Navbar />
+
+      {/* </div> */}
         <Banner {...BannerData}/>
         <About />
         <Gallery/>

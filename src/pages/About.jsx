@@ -24,6 +24,28 @@ export default function About() {
             About Us
           </h1>
         </div>
+        <div className="aboutContent font-['Inter'] font-medium text-[18px] -tracking-[0.04em] leading-[30px] text-[#1B262C] mt-14 overflow-hidden mb-20">
+          <p className="para1">
+            Lorem ipsum dolor sit amet. Id beatae atque aut alias culpa et
+            internos quia qui sapiente tenetur. Qui sint temporibus qui illum
+            expedita et alias ipsam ea excepturi alias est consectetur ullam ut
+            nesciunt itaque qui iusto cupiditate.
+          </p>
+          <p className="para2 mt-2">
+            Id consequatur enim non debitis doloremque aut harum consequuntur
+            qui laboriosam saepe. Et assumenda tempora est illum quia et
+            temporibus dignissimos hic corporis ullam. At molestias modi vel
+            animi iste vel illo laudantium est earum optio non magnam labore ut
+            cumque nulla. Qui tempore aliquid qui earum totam ut magnam placeat
+            ea aliquam molestiae. Vel veniam quaerat ea doloribus dolore et
+            ipsum sunt nam quos laborum qui velit accusantium in quia quod.
+          </p>
+        </div>
+        <div className="overflow-hidden p-1">
+          <h1 className="aboutHeading font-['Inter'] font-semibold text-[40px] -tracking-[0.04em] leading-[30px] text-black capitalize">
+            What We Do
+          </h1>
+        </div>
         <div className="aboutContent font-['Inter'] font-medium text-[18px] -tracking-[0.04em] leading-[30px] text-[#1B262C] mt-14 overflow-hidden">
           <p className="para1">
             Lorem ipsum dolor sit amet. Id beatae atque aut alias culpa et
