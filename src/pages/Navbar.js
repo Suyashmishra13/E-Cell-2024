@@ -17,14 +17,14 @@ export default function Header() {
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
               
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-900"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-900"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-900"></span>
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <div
-              className="absolute top-0 right-0 px-8 py-8"
+              className="absolute top-5 right-5 px-8 py-8"
               onClick={() => setIsNavOpen(false)}
             >
                  
@@ -41,42 +41,42 @@ export default function Header() {
               </svg>
             </div>
            
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/HOME">HOME</a>
+          <ul className="flex flex-col items-center justify-between min-h-[250px]"  >
+              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
+                <a href="/HOME" class="mobile">HOME</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/ABOUT US">ABOUT US</a>
+              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
+                <a href="/ABOUT US" class="moblie">ABOUT US</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/EVENTS">EVENTS</a>
+              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
+                <a href="/EVENTS" class="mobile">EVENTS</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/BLOGS">BLOGS</a>
+              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
+                <a href="/BLOGS" class="mobile">BLOGS</a>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/CONTACT">CONTACT</a>
+              <li className="border-b border-slate-100  my-8 uppercase font-semibold  text-slate-100 text-xl">
+                <a href="/CONTACT"  class="mobile">CONTACT</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+       <ul className="DESKTOP-MENU hidden space-x-8 lg:flex" >
         
-          <li>
-            <a href="/HOME" >HOME</a>
+          <li className="text-xl font-semibold text-stone-950">
+            <a href="/HOME" class="desktop">HOME</a>
           </li>
-          <li>
-            <a href="/ABOUT US">ABOUT US</a>
+          <li className="text-xl font-semibold text-stone-950">
+            <a href="/ABOUT US" class="desktop">ABOUT US</a>
           </li>
-          <li>
-            <a href="/EVENTS">EVENTS</a>
+          <li className="text-xl font-semibold text-stone-950">
+            <a href="/EVENTS" class="desktop">EVENTS</a>
           </li>
-          <li>
-            <a href="/BLOGS">BLOGS</a>
+          <li className="text-xl font-semibold text-stone-950">
+            <a href="/BLOGS" class="desktop">BLOGS</a>
           </li>
-          <li>
-            <a href="/CONTACT">CONTACT</a>
+          <li className="text-xl font-semibold  text-stone-950">
+            <a href="/CONTACT" class="desktop">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -91,49 +91,87 @@ export default function Header() {
         height: 100vh;
         top: 0;
         left: 0;
-        background: white;
+        background: rgb(17 24 39);
         z-index: 10;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
       }
-      a {
-    background-image: linear-gradient(
-    to right,
-    #39acd5,
-    #39acd5 50%,
-    #000 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
+     
+.desktop  {
+        background-image: linear-gradient(
+          to right,
+          #54b3d6,
+          #54b3d6 50%,
+          #000 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .desktop:before {
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+     .desktop:hover {
+       background-position: 0;
+      }
+      
+      .desktop:hover::before {
+        width:100%;
+      }
+      .mobile {
+        background-image: linear-gradient(
+          to right,
+          #54b3d6,
+          #54b3d6 50%,
+          #ffffff 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .mobile:before {
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+     .mobile:hover {
+       background-position: 0;
+      }
+      
+      .mobile:hover::before {
+        width:100%;
+      }
 
-a:before {
-  content: '';
-  background: #0190c9;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover {
- background-position: 0;
-}
-
-a:hover::before {
-  width:100%;
-}
     `}</style>
     </div>
   );
