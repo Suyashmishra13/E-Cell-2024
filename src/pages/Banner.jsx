@@ -35,7 +35,7 @@ export default function Banner(props) {
 
       {/* Social Media Block */}
 
-      <div className="socialMedia absolute right-0 bottom-28 mr-6 z-50 invisible md:visible">
+      <div className="socialMedia absolute right-0 bottom-28 mr-6 z-40 invisible md:visible">
         <div className="flex flex-col space-y-3">
           <a href={props.linkedin} target="_blank">
             <div className="w-[54px] h-[54px] rounded-full bg-[#D9D9D9] hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">

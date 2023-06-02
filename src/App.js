@@ -11,7 +11,7 @@ import FooterData from "./data/Footer.json";
 function App() {
   return (
     <>
-      
+
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
