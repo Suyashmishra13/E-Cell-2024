@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import "./Banner.css";
+import "../css/Banner.css";
 
 export default function Banner(props) {
   return (
@@ -35,26 +35,26 @@ export default function Banner(props) {
 
       {/* Social Media Block */}
 
-      <div className="socialMedia absolute right-0 bottom-28 mr-6 z-40 invisible md:visible">
+      <div className="socialMedia absolute right-0 bottom-20 mr-6 z-40 invisible md:visible">
         <div className="flex flex-col space-y-3">
           <a href={props.linkedin} target="_blank">
-            <div className="w-[54px] h-[54px] rounded-full bg-[#D9D9D9] hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
-              <FaLinkedin className="text-4xl" />
+            <div className="w-[54px] h-[54px] rounded-full bg-transparent hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
+              <FaLinkedin className="text-3xl" />
             </div>
           </a>
-          <a href={props.linkedin} target="_blank">
-            <div className="w-[54px] h-[54px] rounded-full bg-[#D9D9D9] hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
-              <FaLinkedin className="text-4xl" />
+          <a href={props.twitter} target="_blank">
+            <div className="w-[54px] h-[54px] rounded-full bg-transparent hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
+              <FaTwitter className="text-3xl" />
             </div>
           </a>
-          <a href={props.linkedin} target="_blank">
-            <div className="w-[54px] h-[54px] rounded-full bg-[#D9D9D9] hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
-              <FaLinkedin className="text-4xl" />
+          <a href={props.instagram} target="_blank">
+            <div className="w-[54px] h-[54px] rounded-full bg-transparent hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
+              <FaInstagram className="text-3xl" />
             </div>
           </a>
-          <a href={props.linkedin} target="_blank">
-            <div className="w-[54px] h-[54px] rounded-full bg-[#D9D9D9] hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
-              <FaLinkedin className="text-4xl" />
+          <a href={props.facebook} target="_blank">
+            <div className="w-[54px] h-[54px] rounded-full bg-transparent hover:bg-[#0060A1] text-[#0060A1] hover:text-white flex items-center justify-center">
+              <FaFacebook className="text-3xl" />
             </div>
           </a>
         </div>

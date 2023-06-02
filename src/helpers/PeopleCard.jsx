@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamCss from "../../pages/TeamCss.module.css"
+import TeamCss from "../css/TeamCss.module.css"
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Link } from 'react-router-dom';

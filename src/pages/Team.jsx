@@ -1,7 +1,7 @@
 import React from 'react'
 
-import TeamCss from "./TeamCss.module.css"
-import PeopleCard from '../components/Team/PeopleCard'
+import TeamCss from "../css/TeamCss.module.css"
+import PeopleCard from '../helpers/PeopleCard'
 
 const Team = () => {
     return (
