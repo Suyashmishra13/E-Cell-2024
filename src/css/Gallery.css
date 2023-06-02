@@ -6,7 +6,6 @@
 .container{
     width: 100%;
     margin: 0 auto;
-    background-color:  #1B262C;
     padding-top: 1rem;
 }
 
@@ -32,7 +31,7 @@
     text-align: center;
     font-size: 350%;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     margin:0;
 }
 span{
@@ -40,7 +39,7 @@ span{
 }
 .swiper-pagination{
     position: relative;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
     /* bottom: 0; */
 }
 .swiper-pagination-bullet{
@@ -48,6 +47,7 @@ span{
     transition: 200ms ease-out;
     /* margin-bottom: 5rem; */
 }
+
 .swiper-pagination-bullet:hover{
     transform: scale(1.5);
 }
@@ -55,7 +55,7 @@ span{
     background-color: #2a87c6    ;
 }
 .swiper-wrapper{
-    margin-bottom: 8rem;
+    margin-bottom: 0;
 }
 .info{
     opacity: 0;
@@ -106,6 +106,7 @@ span{
     color: #000000;
   }
   
+  
   .info a{
     position: absolute;
     padding: 3%;
@@ -120,6 +121,8 @@ span{
     color: #0962e7;
   }
   .slider-arrow{
+    position: relative;
+    top: 0;
     font-size: small;
     font-weight: 900;
     background-color: aliceblue;
@@ -143,6 +146,7 @@ span{
         font-size: 50%;
         
     }
+    
     .info_heading{
         font-size: large;
     }
@@ -158,6 +162,7 @@ span{
     }
   }
   @media (max-width: 600px) {
+
     .info_data{
         font-size: 50%;
     }
@@ -169,6 +174,7 @@ span{
         font-size: x-small;
     }
     .slider-arrow{
+        margin-top: -50;
         padding: 8%;
         transform:scale(0.4) ;
     }
@@ -178,8 +184,9 @@ span{
   }
 
 .gallery_container{
-    background:  #1B262C;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.59) 0%, rgba(50,130,184,0.8) 46%, rgba(0,0,0,0.6) 100%);
 
     margin: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
   }

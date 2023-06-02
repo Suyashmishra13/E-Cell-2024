@@ -73,7 +73,7 @@ export default function Gallery() {
         <div className="swiper-button-next slider-arrow">
             <FaArrowRight></FaArrowRight>
         </div>
-        <div className="swiper-pagination"></div>
+        {/* <div className="swiper-pagination"></div> */}
       </div>
       </Swiper>
     </div>
