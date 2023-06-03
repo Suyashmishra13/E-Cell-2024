@@ -114,7 +114,7 @@ export default function Header() {
 .desktop  {
         background-image: linear-gradient(
           to right,
-          ##0060A1,
+          #0060A1,
           #0060A1 50%,
           #000 50%
         );
