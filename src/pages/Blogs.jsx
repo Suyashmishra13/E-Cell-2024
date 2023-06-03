@@ -17,10 +17,10 @@ export default function Blogs() {
 </div>
   <div className = "flex items-center justify-center">
  
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 px-4 md:px-6 lg:px-10">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 px-4 md:px-6 lg:px-10 w-full">
         <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-96">
-                <img  className ="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src={img} alt="" />
+            <div className="h-96 w-full">
+                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
@@ -35,8 +35,8 @@ export default function Blogs() {
             </div>
         </div>
         <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-96">
-                <img  className ="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src={img1} alt="" />
+            <div className="h-96 w-full">
+                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img1} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
@@ -51,8 +51,8 @@ export default function Blogs() {
             </div>
         </div>
         <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-96">
-                <img  className ="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500" src={img2} alt="" />
+            <div className="h-96 w-full">
+                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img2} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
