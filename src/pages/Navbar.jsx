@@ -5,9 +5,9 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between py-8 bg-transparent absolute z-50 w-full px-16">
+    <div className="flex items-center justify-between py-8 bg-transparent sticky top-0 z-50 w-full px-16">
       
-      <img src="./ecell.png" alt="Logo" />
+      <img src="./ecell.png" alt="Logo" className="object-contain h-48 w-96"  />
      
       <nav>
   
@@ -114,8 +114,8 @@ export default function Header() {
 .desktop  {
         background-image: linear-gradient(
           to right,
-          #54b3d6,
-          #54b3d6 50%,
+          ##0060A1,
+          #0060A1 50%,
           #000 50%
         );
         background-size: 200% 100%;
