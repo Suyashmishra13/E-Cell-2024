@@ -5,6 +5,7 @@ import About from './About';
 import Blogs from "./Blogs";
 import Gallery from "./Gallery";
 import Navbar from "./Navbar";
+import Initiatives from './Initiatives'
 
 
 import BannerData from "../data/Banner.json";
@@ -21,6 +22,7 @@ export default function Homepage(){
         <About />
         <Gallery/>
         <Blogs/>
+        {/* <Initiatives/> */}
         </>
     )
 }
