@@ -24,7 +24,7 @@ export default function Gallery() {
   return (
 <>
 <div className='gallery_container'>
-        <h1 className="heading mt-0 p-16">GALLER<span className="">Y</span></h1>
+        <h1 className="p-16 mt-0 heading">GALLER<span className="">Y</span></h1>
     <div className='container'>
 
         <Swiper

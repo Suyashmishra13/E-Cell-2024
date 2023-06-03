@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/" element={<Homepage />} />
           <Route exact path="/team" element={<Team />} />
           <Route exact path="/blogs" element={<BlogsPage/>}/>
+          
         </Routes>
       </BrowserRouter>
       <Footer {...FooterData} />
