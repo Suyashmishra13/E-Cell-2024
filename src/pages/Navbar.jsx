@@ -5,7 +5,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const[navbar,setNavbar]=useState(false);
   const changeBackground =() => {
-  if(window.scrollY>=750){
+  if(window.scrollY>=5){
     setNavbar(true);
   }
   else{
