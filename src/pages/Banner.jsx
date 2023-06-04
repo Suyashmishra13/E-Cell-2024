@@ -4,7 +4,7 @@ import "../css/Banner.css";
 
 export default function Banner(props) {
   return (
-    <div className="banner bg-white w-full h-screen m-0">
+    <div className="banner bg-white w-full h-screen m-0 translate-y-[-9.5%]">
 
       {/* Background Video */}
 

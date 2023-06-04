@@ -2,11 +2,29 @@ import { useState } from "react";
 import "../css/Navbar.css";
 
 export default function Header() {
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+      if (window.scrollY >= 200) {
+          setColorchange(true);
+      }
+      else {
+          setColorchange(false);
+      }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
   return (
-    <div className="flex items-center justify-between py-2 bg-white sticky top-0 z-50 w-full px-16">
-      
+    
+      <div className={classNames(
+        'flex sticky items-center justify-between py-2 bg-transparent top-0 z-50 w-full px-16', 
+        colorChange?'bg-white':'bg-transparent',
+  )}>
       <img src="./ecell.png" alt="Logo" className="object-contain w-32"  />
      
       <nav>
