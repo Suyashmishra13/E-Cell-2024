@@ -3,9 +3,20 @@ import "../css/Navbar.css";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const[navbar,setNavbar]=useState(false);
+  const changeBackground =() => {
+  if(window.scrollY>=200){
+    setNavbar(true);
+  }
+  else{
+    setNavbar(false);
+  }
+  };
+  window.addEventListener('scroll',changeBackground);
+  
 
   return (
-    <div className="flex items-center justify-between py-2 bg-white sticky top-0 z-50 w-full px-16">
+    <div className={navbar ? 'navbar active' : 'navbar'}>
       
       <img src="./ecell.png" alt="Logo" className="object-contain w-32"  />
      
