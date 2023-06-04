@@ -40,7 +40,9 @@ export default function Gallery() {
             modifier :2.5,
         }}
         pagination={{ el: '.swiper-pagination', clickable: true }}
-        autoplay={{delay : 1000}}
+        autoplay={{delay : 1000 ,
+          disableOnInteraction: false,
+        }}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

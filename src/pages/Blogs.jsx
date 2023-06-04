@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper';
 import { useState, useRef, useEffect } from 'react';
+import {FaArrowLeft , FaArrowRight} from "react-icons/fa";
 
 import img from '../images/mcd.jpg';
 import img1 from '../images/ipl.webp';
@@ -34,8 +35,13 @@ export default function Blogs() {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      pagination={{ clickable: true }}
+      pagination={{ el: '.swiper-pagination', clickable: true }}
     //   scrollbar={{ draggable: false }}
+    navigation={{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        clickable: true,
+      }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       className='px-8'
@@ -152,6 +158,15 @@ export default function Blogs() {
             </div>
         </div></SwiperSlide>
       ...
+      <div className="slider-controler">
+        <div className="swiper-button-prev slider-arrow">
+            <FaArrowLeft></FaArrowLeft>
+        </div>
+        <div className="swiper-button-next slider-arrow">
+            <FaArrowRight></FaArrowRight>
+        </div>
+        {/* <div className="swiper-pagination"></div> */}
+      </div>
     </Swiper> 
     </div>
     </div>
