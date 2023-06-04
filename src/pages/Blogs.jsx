@@ -35,13 +35,7 @@ export default function Blogs() {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      pagination={{ el: '.swiper-pagination', clickable: true }}
-    //   scrollbar={{ draggable: false }}
-    navigation={{
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        clickable: true,
-      }}
+      pagination={{clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       className='px-8'

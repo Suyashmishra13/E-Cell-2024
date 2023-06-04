@@ -1,4 +1,4 @@
-@import 'tailwindcss/base';
+/* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import "./0x0.webp"
@@ -8,8 +8,8 @@
     --clr-neutral-900: hsl(207, 19%, 9%);
     --clr-neutral-100: hsl(0, 0%, 100%);
     --clr-accent-400: hsl(142, 90%, 61%);
-  }
-  .Header h1{
+  }*/
+   .Header h1{
 
     padding: 10px;
       display: flex;
@@ -34,7 +34,7 @@
 width: 1440px;
 height: 2738px;
 
-background: linear-gradient(180deg, #1B262C 0%, rgba(27, 38, 44, 0) 173.98%);
+/* background: linear-gradient(180deg, #1B262C 0%, rgba(27, 38, 44, 0) 173.98%); */
     /* display: grid;
     min-height: 100vh;
     place-items: center;

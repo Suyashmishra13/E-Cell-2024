@@ -6,6 +6,7 @@ import Blogs from "./Blogs";
 import Gallery from "./Gallery";
 import Navbar from "./Navbar";
 import Initiatives from './Initiatives'
+import Events from './Events';
 
 
 import BannerData from "../data/Banner.json";
@@ -14,15 +15,13 @@ import BannerData from "../data/Banner.json";
 export default function Homepage(){
     return(
         <>
-        {/* <div className="container mx-auto mb-8 px-8 z-100">  */}
         <Navbar />
-
-      {/* </div> */}
         <Banner {...BannerData}/>
         <About />
+        {/* <Initiatives/> */}
+        <Events/>
         <Gallery/>
         <Blogs/>
-        {/* <Initiatives/> */}
         </>
     )
 }

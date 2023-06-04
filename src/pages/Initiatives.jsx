@@ -1,7 +1,7 @@
 
 import React from "react";
 import CardContainer from "../helpers/CardContainer";
-// import "../css/style.css" 
+// import "../css/Intiatives.css" 
 
 export default function Initiatives() {
     return(
