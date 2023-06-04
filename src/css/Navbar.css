@@ -350,6 +350,26 @@ li{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.navbar{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 50;
+  padding-left: 4rem/* 64px */;
+  padding-right: 4rem/* 64px */;
+  position: sticky;
+  
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: all .7s ease-in;
+}
+.navbar.active{
+
+background-color: white;
+}
 
 @media (min-width: 1024px) {
   .lg\:flex {
