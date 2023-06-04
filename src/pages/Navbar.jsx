@@ -53,7 +53,7 @@ export default function Header() {
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <div
-              className="absolute top-5 right-5 px-8 py-8"
+              className="absolute top-7 right-8 px-8 py-8"
               onClick={() => setIsNavOpen(false)}
             >
                  
