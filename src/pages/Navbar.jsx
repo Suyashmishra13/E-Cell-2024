@@ -7,6 +7,17 @@ export default function Header() {
   }
 
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const[navbar,setNavbar]=useState(false);
+  const changeBackground =() => {
+  if(window.scrollY>=1){
+    setNavbar(true);
+  }
+  else{
+    setNavbar(false);
+  }
+  };
+  window.addEventListener('scroll',changeBackground);
+  
 
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
