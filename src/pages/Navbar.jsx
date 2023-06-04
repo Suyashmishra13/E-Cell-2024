@@ -5,9 +5,9 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between py-8 bg-transparent sticky top-0 z-50 w-full px-16">
+    <div className="flex items-center justify-between py-2 bg-white sticky top-0 z-50 w-full px-16">
       
-      <img src="./ecell.png" alt="Logo" className="object-contain h-48 w-96"  />
+      <img src="./ecell.png" alt="Logo" className="object-contain w-32"  />
      
       <nav>
   
@@ -67,9 +67,9 @@ export default function Header() {
           </div>
         </section>
 
-       <ul className="DESKTOP-MENU hidden space-x-8 lg:flex text-[#0060A1]" >
+       <ul className="DESKTOP-MENU hidden space-x-8 lg:flex text-white" >
         
-          <li className="text-xl font-semibold text-stone-950 text-[#0060A1]">
+          <li className="text-xl font-semibold text-stone-950 text-white">
             <a href="/HOME" class="desktop">HOME</a>
           </li>
           <li className="text-xl font-semibold text-stone-950">
@@ -112,6 +112,7 @@ export default function Header() {
       }
      
 .desktop  {
+        color: white;
         background-image: linear-gradient(
           to right,
           #0060A1,
