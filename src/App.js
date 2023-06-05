@@ -7,6 +7,7 @@ import Homepage from "./pages/Homepage";
 import BlogsPage from "./pages/BlogsPage";
 
 import FooterData from "./data/Footer.json";
+import BlogsPage2 from "./pages/BlogsPage2";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route exact path="/team" element={<Team />} />
-          <Route exact path="/blogs" element={<BlogsPage/>}/>
+          <Route exact path="/blogs" element={<BlogsPage2/>}/>
           
         </Routes>
       </BrowserRouter>
