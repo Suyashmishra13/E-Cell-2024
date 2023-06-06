@@ -1,0 +1,29 @@
+{
+    "pages": [
+        {
+            "title": "HOME"
+        },
+        {
+            "title": "ABOUT"
+        },
+        {
+            "title": "INITIATIVES"
+        },
+        {
+            "title": "EVENTS"
+        },
+        {
+            "title": "GALLERY"
+        },
+        {
+            "title": "TEAM"
+        },
+        {
+            "title": "BLOGS"
+        },
+        {
+            "title": "CONTACT"
+        }
+    
+    ]
+}

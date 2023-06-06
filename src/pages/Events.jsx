@@ -1,54 +1,60 @@
-
-import "../css/Events.css"
-import img1 from "../images/mcd.jpg"
 import React from "react";
 
 
-function App() {
-    
-return (
-    <div className="App">   
-    <h1 className="head">Upcoming <span className="Heading">Events</span></h1>
-    <br></br>
-    <br></br>
-    
-    <div className="Events">
+function App(props) {
 
-        <div className="bg1" >
-            <img id ="img1" src={img1} alt="nature"></img>
-           <div className="content">
-            <h2 className="social1">Social Media</h2>      
-           <p className="para1">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Eget nunc lobortis mattis aliquam faucibus purus.  
-           </p>
-           <p className="more">Read More...</p>          
-           </div>           
+    return (
+        <div className="bg-gradient-to-b from-[#00538169] via-[#3282B885] to-[#1B262CCC]">
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="text-center pt-10 pb-28 text-6xl font-semibold">Recent <span className="text-[#0060a1]">Events</span></h1>
+
+            <div className="flex justify-center items-center w-full lg:px-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 px-8 pb-32 md:px-32 ">
+                    {props.recent.map((val,e)=>(
+                        <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
+                        <div className="h-96 w-full">
+                            <img  className ="h-full w-full object-cover transition-transform duration-500 delay-3000" src={val.img} alt="img" />
+                        </div>
+                        <div className="w-full absolute inset-0">
+                            <div className="w-full absolute inset-0 flex flex-col items-center justify-center text-center translate-y-[64%] group-hover:translate-y-0 transition-transform ease-in group-hover:bg-[#1B2A2C] group-hover:bg-opacity-75 delay-3000 duration-3000">
+                                <div className="bg-[#1B2A2C] bg-opacity-75 w-full py-4 mb-4 group-hover:bg-opacity-0">
+                                <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4 ">{val.heading}</h1>
+                                </div>
+                                <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{val.content}</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    ))}
+                </div>
+            </div>
         </div>
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="text-center py-32 text-6xl font-semibold">Upcoming <span className="text-[#0060a1]">Events</span></h1>
 
-        <div className="bg1" >
-            <img id ="img1" src={img1} alt="nature"></img>
-           <div className="content">
-            <h2 className="social1">Social Media</h2>      
-           <p className="para1">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Eget nunc lobortis mattis aliquam faucibus purus.  
-           </p>
-           <p className="more">Read More...</p>          
-           </div>           
+            <div className="flex justify-center items-center w-full lg:px-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 px-8 pb-32 md:px-32 ">
+                {props.upcoming.map((val,e)=>(
+                     <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
+                     <div className="h-96 w-full">
+                         <img  className ="h-full w-full object-cover transition-transform duration-500 delay-500" src={val.img} alt="" />
+                     </div>
+                     <div className="w-full absolute inset-0">
+                         <div className="w-full absolute inset-0 flex flex-col items-center justify-center text-center translate-y-[64%] group-hover:translate-y-0 transition-transform ease-in group-hover:bg-[#1B2A2C] group-hover:bg-opacity-75 delay-3000 duration-3000">
+                             <div className="bg-[#1B2A2C] bg-opacity-75 w-full py-4 mb-4 group-hover:bg-opacity-0">
+                             <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4 ">{val.heading}</h1>
+                             </div>
+                             <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{val.content}</p>
+                             
+                         </div>
+                     </div>
+                 </div>
+                ))}
+                </div>
+            </div>
         </div>
-           
-        <div className="bg1" >
-            <img id ="img1" src={img1} alt="nature"></img>
-           <div className="content">
-            <h2 className="social1">Social Media</h2>      
-           <p className="para1">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Eget nunc lobortis mattis aliquam faucibus purus.  
-           </p>
-           <p className="more">Read More...</p>          
-           </div>           
-        </div> 
-
-    </div>
-   </div>
-   )};
+        </div>
+    )
+};
 
 export default App

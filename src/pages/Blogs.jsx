@@ -1,21 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper';
-import { useState, useRef, useEffect } from 'react';
-import {FaArrowLeft , FaArrowRight} from "react-icons/fa";
-
-import img from '../images/mcd.jpg';
-import img1 from '../images/ipl.webp';
-import img2 from '../images/amul.gif'
+import { Pagination,Autoplay} from 'swiper';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay'
 
 
-export default function Blogs() {
+export default function Blogs(props) {
 
   return (
     <div className='bg-gradient-to-t from-[#0F4F7A] to-[#DDDDDD] py-4'>
@@ -29,7 +21,7 @@ export default function Blogs() {
   <div className="px-4 md:px-6 lg:px-10 w-full">
   <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+      modules={[Pagination, Autoplay]}
       loop={true}
       autoplay={{
         delay: 2500,
@@ -42,7 +34,7 @@ export default function Blogs() {
       breakpoints={{
         0: {
             slidesPreview:1,
-            spaceBetween:10,
+            spaceBetween:35,
 
         },
         768: {
@@ -55,15 +47,16 @@ export default function Blogs() {
         },
       }}
     >
-      <SwiperSlide> <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
+        {props.blogs.map((val,e)=>(
+            <SwiperSlide> <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
             <div className="h-96 w-full">
-                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img} alt="" />
+                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={val.img} alt="" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
-                    <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4">Detangling McDonalds</h1>
-                    <p className='w-full mb-4 text-right'>15 May 2023</p>
-                    <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering...</p>
+                    <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4">{val.heading}</h1>
+                    <p className='w-full mb-6 text-right font-semibold'>{val.date}</p>
+                    <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{val.content}</p>
                     <button className ="font-com rounded-full shadow shadow-black/60 bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white">
                         Read More
                     </button>
@@ -71,96 +64,7 @@ export default function Blogs() {
                 </div>
             </div>
         </div></SwiperSlide>
-      <SwiperSlide><div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-full">
-                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img1} alt="" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
-                    <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4">IPL - Case Study</h1>
-                    <p className='w-full mb-4 text-right'>15 May 2023</p>
-                    <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering...</p>
-                    <button className ="font-com rounded-full shadow shadow-black/60 bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white">
-                        Read More
-                    </button>
-                    
-                </div>
-            </div>
-        </div></SwiperSlide>
-      <SwiperSlide><div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-full">
-                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img2} alt="" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
-                    <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4">Amul - Case Study</h1>
-                    <p className='w-full mb-4 text-right'>15 May 2023</p>
-                    <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering...</p>
-                    <button className ="font-com rounded-full shadow shadow-black/60 bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white">
-                        Read More
-                    </button>
-                    
-                </div>
-            </div>
-        </div></SwiperSlide>
-      <SwiperSlide><div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-full">
-                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img1} alt="" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
-                    <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4">IPL - Case Study</h1>
-                    <p className='w-full mb-4 text-right'>15 May 2023</p>
-                    <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering...</p>
-                    <button className ="font-com rounded-full shadow shadow-black/60 bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white">
-                        Read More
-                    </button>
-                    
-                </div>
-            </div>
-        </div></SwiperSlide>
-        <SwiperSlide> <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-full">
-                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img} alt="" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
-                    <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4">Detangling McDonalds</h1>
-                    <p className='w-full mb-4 text-right'>15 May 2023</p>
-                    <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering...</p>
-                    <button className ="font-com rounded-full shadow shadow-black/60 bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white">
-                        Read More
-                    </button>
-                    
-                </div>
-            </div>
-        </div></SwiperSlide>
-        <SwiperSlide><div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
-            <div className="h-96 w-full">
-                <img  className ="h-full w-full object-cover group-hover:rotate-1 group-hover:scale-125 transition-transform duration-500" src={img2} alt="" />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[64%] group-hover:translate-y-0 transitin-all">
-                    <h1 className = "font-dmserif text-3xl font-bold text-white mb-4 group-hover:mb-4">Amul - Case Study</h1>
-                    <p className='w-full mb-4 text-right'>15 May 2023</p>
-                    <p className = "text-lg italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering...</p>
-                    <button className ="font-com rounded-full shadow shadow-black/60 bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white">
-                        Read More
-                    </button>
-                    
-                </div>
-            </div>
-        </div></SwiperSlide>
-      ...
-      <div className="slider-controler">
-        <div className="swiper-button-prev slider-arrow">
-            <FaArrowLeft></FaArrowLeft>
-        </div>
-        <div className="swiper-button-next slider-arrow">
-            <FaArrowRight></FaArrowRight>
-        </div>
-        {/* <div className="swiper-pagination"></div> */}
-      </div>
+        ))}
     </Swiper> 
     </div>
     </div>

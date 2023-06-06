@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../css/Navbar.css";
 
-export default function Header() {
+export default function Header(props) {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
@@ -71,54 +71,21 @@ export default function Header() {
             </div>
            
           <ul className="flex flex-col items-center justify-between min-h-[250px] text-[#0060A1]"  >
+            {props.pages.map((val,e)=>(
               <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl text-[#0060A1]">
-                <a href="/HOME" class="mobile">HOME</a>
-              </li>
-              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
-                <a href="/ABOUT US" class="moblie">ABOUT US</a>
-              </li>
-              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
-                <a href="/EVENTS" class="mobile">INTIATIVES</a>
-              </li>
-              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
-                <a href="/EVENTS" class="mobile">EVENTS</a>
-              </li>
-              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
-                <a href="/BLOGS" class="mobile">BLOGS</a>
-              </li>
-              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl">
-                <a href="/BLOGS" class="mobile">TEAM</a>
-              </li>
-              <li className="border-b border-slate-100  my-8 uppercase font-semibold  text-slate-100 text-xl">
-                <a href="/CONTACT"  class="mobile">CONTACT</a>
-              </li>
+              <a href="/HOME" class="mobile">{val.title}</a>
+            </li>
+            ))}
             </ul>
           </div>
         </section>
 
        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex text-white" >
-        
-          <li className="text-xl font-semibold text-stone-950 text-white">
-            <a href="/HOME" class="desktop">HOME</a>
-          </li>
-          <li className="text-xl font-semibold text-stone-950">
-            <a href="/ABOUT US" class="desktop">ABOUT US</a>
-          </li>
-          <li className="text-xl font-semibold text-stone-950">
-            <a href="/EVENTS" class="desktop">INTIATIVES</a>
-          </li>
-          <li className="text-xl font-semibold text-stone-950">
-            <a href="/EVENTS" class="desktop">EVENTS</a>
-          </li>
-          <li className="text-xl font-semibold text-stone-950">
-            <a href="/BLOGS" class="desktop">BLOGS</a>
-          </li>
-          <li className="text-xl font-semibold text-stone-950">
-            <a href="/EVENTS" class="desktop">TEAM</a>
-          </li>
-          <li className="text-xl font-semibold  text-stone-950">
-            <a href="/CONTACT" class="desktop">CONTACT</a>
-          </li>
+       {props.pages.map((val,e)=>(
+        <li className="text-xl font-semibold text-stone-950 text-white">
+        <a href="/HOME" class="desktop">{val.title}</a>
+      </li>
+        ))}
         </ul>
       </nav>
       <style>{`

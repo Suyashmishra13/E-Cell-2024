@@ -5,7 +5,7 @@ import PeopleCard from '../helpers/PeopleCard'
 
 const Team = () => {
     return (
-        <>
+        <div className='bg-[#1B262C]'>
             <div className='container mx-auto px-5 m-auto'>
 
                 <div className={TeamCss.header}>
@@ -104,7 +104,7 @@ const Team = () => {
 
 
             </div>
-        </>
+        </div>
     )
 }
 
