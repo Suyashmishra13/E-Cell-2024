@@ -20,11 +20,11 @@ export default function About() {
     >
       <div className="aboutContainer fluid justify-center items-center max-w-[70vw] mx-auto text-center">
         <div className="overflow-hidden p-1">
-          <h1 className="aboutHeading font-['Inter'] font-bold text-5xl -tracking-[0.04em] leading-[30px] text-black capitalize leading-10">
+          <h1 className="aboutHeading font-['Inter'] font-normal text-[50px] -tracking-[0.04em] leading-[30px] text-black capitalize leading-10">
             E-CELL IIT INDORE
           </h1>
         </div>
-        <div className="aboutContent font-['Inter'] font-semibold text-[25px] -tracking-[0.04em] leading-[30px] text-[#1B262C] mt-14 overflow-hidden mb-20">
+        <div className="aboutContent font-['Inter'] font-normal text-[18px] -tracking-[0.04em] leading-[30px] text-[#1B262C] mt-14 overflow-hidden mb-20">
           <p className="para1">
           Entrepreneurship Cell at IIT Indore believes that entrepreneurship is not just about starting companies, but a pathway towards India's socio-economic development. Our vision is to make students and faculty entrepreneurial in every work that they do. We hope to enable them to solve global challenges as we see students as the greatest capital and intend to nurture them, provide them with opportunities for excellence.
           </p>
