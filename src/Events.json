@@ -3,21 +3,21 @@
     {
         "img":"images/mcd.jpg",
         "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
+        "content":"The primary purpose of this particular competition was to facilitate a case study that was specifically designed to delve into the intricacies of marketing."
     },
     {
         "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
+        "heading":"Pitching Competition",
+        "content":"Marketing has evolved into one of the most crucial pillars for building brands in the past few years.Disruptive marketing strategies have the potential to completely transform market dynamics."
     },
     {
         "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
+        "heading":"Entrepreneur's Talks",
+        "content":"Talk shows remain the highlight of the summit each year,attracting a huge audience of students,professors and more from across different institutions."
     },
     {
         "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
+        "heading":"Startup Expo",
         "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
     },
     {
@@ -32,38 +32,13 @@
     }
 
 ],
+
 "upcoming":[
     {
-        "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
-    },
-    {
-        "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
-    },
-    {
-        "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
-    },
-    {
-        "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
-    },
-    {
-        "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
-    },
-    {
-        "img":"images/mcd.jpg",
-        "heading":"Marketing Fiesta",
-        "content":"Mc Donald's is probably one of the very first quick service restaurants that have been established in India,and God,they stayed.From ordering..."
-    }
-
+        "img":"images/E-Summit.jpg",
+        "heading":"E-Summit 2023",
+        "content":"E-Summit is the flagship event organized by the E-Cell,IIT Indore annually.It is one of the most awaited events hosted by the institute that witnesses massive participation from across the country.Through this event,we aim to ignite the entrepreneur inside students by bringing them together to compete in various competitions exploring all aspects of entrepreneurship.The theme for this year is Paradox Of Choices, which represents the seamless choices an entrepreneur has to come across in his journey towards building something which can potentially change the way we live.We also host some of the most seasoned and celebrated entrepreneurs who enlighten our audience with their jaw-dropping journeys."
+    }     
 ]
 
 }
