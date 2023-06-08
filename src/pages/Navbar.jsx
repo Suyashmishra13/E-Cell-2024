@@ -80,7 +80,7 @@ export default function Header(props) {
           </div>
         </section>
 
-       <ul className="DESKTOP-MENU hidden space-x-8 lg:flex text-white" >
+       <ul className="DESKTOP-MENU hidden space-x-12 lg:flex text-white" >
        {props.pages.map((val,e)=>(
         <li className="text-xl font-semibold text-stone-950 text-white">
         <a href="/HOME" class="desktop">{val.title}</a>
