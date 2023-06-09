@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../css/Navbar.css";
-
+import { Link } from 'react-scroll';
 export default function Header(props) {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -70,22 +70,42 @@ export default function Header(props) {
               </svg>
             </div>
            
-          <ul className="flex flex-col items-center justify-between min-h-[250px] text-[#0060A1]"  >
-            {props.pages.map((val,e)=>(
-              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl text-[#0060A1]">
-              <a href="/HOME" class="mobile">{val.title}</a>
-            </li>
-            ))}
+          <ul className="flex flex-col items-center justify-between min-h-[250px] text-[#0060A1]">
+              {props.pages.map((val, index) => (
+                <li
+                  className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl text-[#0060A1]"
+                  key={index}
+                >
+                   <Link
+                to={val.title.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust this offset if necessary
+                duration={500} // Adjust the scrolling duration if necessary
+              >
+                {val.title}
+              </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </section>
 
-       <ul className="DESKTOP-MENU hidden space-x-12 lg:flex text-white" >
-       {props.pages.map((val,e)=>(
-        <li className="text-xl font-semibold text-stone-950 text-white">
-        <a href="/HOME" class="desktop">{val.title}</a>
-      </li>
-        ))}
+        <ul className="DESKTOP-MENU hidden space-x-12 lg:flex text-white">
+          {props.pages.map((val, index) => (
+            <li className="text-xl font-semibold text-stone-950" key={index}>
+              <Link
+                to={val.title.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust this offset if necessary
+                duration={500} // Adjust the scrolling duration if necessary
+               
+              >
+                {val.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
       <style>{`
