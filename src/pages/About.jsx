@@ -12,6 +12,7 @@ export default function About(props) {
   });
 
   return (
+    <section id="about">
     <div
       ref={ref}
       className={`about w-full h-fit bg-gradient-to-b from-[#84A9BE00] to-[#00538169] py-24 pb-12 ${
@@ -41,5 +42,6 @@ export default function About(props) {
         </div>
       </div>
     </div>
+    </section>
   );
 }
