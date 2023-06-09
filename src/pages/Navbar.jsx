@@ -42,7 +42,7 @@ export default function Header(props) {
   
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2 z-50"
+            className="HAMBURGER-ICON space-y-2 z-50 cursor-pointer"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
               
@@ -53,7 +53,7 @@ export default function Header(props) {
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <div
-              className="absolute top-7 right-8 px-8 py-8"
+              className="absolute top-7 right-8 px-8 py-8 cursor-pointer"
               onClick={() => setIsNavOpen(false)}
             >
                  
@@ -70,10 +70,10 @@ export default function Header(props) {
               </svg>
             </div>
            
-          <ul className="flex flex-col items-center justify-between min-h-[250px] text-[#0060A1]">
+          <ul className="flex flex-col items-center justify-between min-h-[250px] text-[#0060A1] overflow-y-auto mobile-menu">
               {props.pages.map((val, index) => (
                 <li
-                  className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl text-[#0060A1]"
+                  className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl text-[#0060A1] mobile"
                   key={index}
                 >
                    <Link
@@ -82,7 +82,7 @@ export default function Header(props) {
                 smooth={true}
                 offset={-70} // Adjust this offset if necessary
                 duration={500} // Adjust the scrolling duration if necessary
-                className="mobile"
+                onClick={() => setIsNavOpen((prev) => !prev)}
               >
                 {val.title}
               </Link>
@@ -94,14 +94,13 @@ export default function Header(props) {
 
         <ul className="DESKTOP-MENU hidden space-x-12 lg:flex text-white">
           {props.pages.map((val, index) => (
-            <li className="text-xl font-semibold text-stone-950" key={index}>
+            <li className="text-xl font-semibold text-stone-950 desktop" key={index}>
               <Link
                 to={val.title.toLowerCase()}
                 spy={true}
                 smooth={true}
                 offset={-70} // Adjust this offset if necessary
                 duration={500} // Adjust the scrolling duration if necessary
-                className="desktop"
               >
                 {val.title}
               </Link>

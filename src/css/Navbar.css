@@ -455,3 +455,7 @@ background-color: white;
     display: none;
   }
 }
+
+.mobile-menu::-webkit-scrollbar {
+  display: none;
+}
