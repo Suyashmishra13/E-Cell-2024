@@ -82,6 +82,7 @@ export default function Header(props) {
                 smooth={true}
                 offset={-70} // Adjust this offset if necessary
                 duration={500} // Adjust the scrolling duration if necessary
+                className="mobile"
               >
                 {val.title}
               </Link>
@@ -100,7 +101,7 @@ export default function Header(props) {
                 smooth={true}
                 offset={-70} // Adjust this offset if necessary
                 duration={500} // Adjust the scrolling duration if necessary
-               
+                className="desktop"
               >
                 {val.title}
               </Link>
@@ -127,79 +128,7 @@ export default function Header(props) {
         align-items: center;
       }
      
-.desktop  {
-        color: white;
-        background-image: linear-gradient(
-          to right,
-          #0060A1,
-          #0060A1 50%,
-          #000 50%
-        );
-        background-size: 200% 100%;
-        background-position: -100%;
-        display: inline-block;
-        padding: 5px 0;
-        position: relative;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .desktop:before {
-        content: '';
-        background: #54b3d6;
-        display: block;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 0;
-        height: 3px;
-        transition: all 0.3s ease-in-out;
-      }
-      
-     .desktop:hover {
-       background-position: 0;
-      }
-      
-      .desktop:hover::before {
-        width:100%;
-      }
-      .mobile {
-        background-image: linear-gradient(
-          to right,
-          #54b3d6,
-          #54b3d6 50%,
-          #ffffff 50%
-        );
-        background-size: 200% 100%;
-        background-position: -100%;
-        display: inline-block;
-        padding: 5px 0;
-        position: relative;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .mobile:before {
-        content: '';
-        background: #54b3d6;
-        display: block;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 0;
-        height: 3px;
-        transition: all 0.3s ease-in-out;
-      }
-      
-     .mobile:hover {
-       background-position: 0;
-      }
-      
-      .mobile:hover::before {
-        width:100%;
-      }
+
 
     `}</style>
     </div>
