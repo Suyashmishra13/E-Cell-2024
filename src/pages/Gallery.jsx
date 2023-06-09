@@ -34,6 +34,7 @@ export default function Gallery() {
   }, []);
   return (
 <>
+    <section id="gallery">
 <div className='gallery_container'>
 <div className = {visible}>
   <h3 className="mt-3 text-center text-4xl font-black disp_head pt-6 pb-4">{gallery_data[index].heading}</h3>
@@ -97,6 +98,7 @@ export default function Gallery() {
       </Swiper>
     </div>
     </div>
+</section>
     </>
   )
 }
