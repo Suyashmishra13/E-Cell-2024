@@ -50,6 +50,19 @@ export default function Footer(props) {
             </Link>
             ))}
           </div>
+          <div className="flex flex-col space-y-2 text-white font-mono">
+            {props.pages2.map((val, index) => (
+              <Link
+              to={val.title.toLowerCase()}
+              spy={true}
+              smooth={true}
+              offset={-70} // Adjust this offset if necessary
+              duration={500} // Adjust the scrolling duration if necessary
+            >
+              {val.title}
+            </Link>
+            ))}
+          </div>
           <div className="flex flex-col space-y-2">
             <div className="text-white text-lg font-bold">
               Contact Information
