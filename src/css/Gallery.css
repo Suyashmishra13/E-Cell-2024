@@ -30,7 +30,7 @@
 .heading{
     text-align: center;
     font-size: 350%;
-    font-weight: bold;
+    font-weight: 600;
     color: white;
     margin:0;
 }
@@ -198,7 +198,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.59) 0%, rgba(50,130,184,0.8) 46%,
   }
 
 .box{
-    height: 92vh;
+    height: 50vh;
     position: fixed;
     z-index: 1000;
     padding: 10px;
@@ -207,9 +207,11 @@ background: linear-gradient(0deg, rgba(0,0,0,0.59) 0%, rgba(50,130,184,0.8) 46%,
     bottom: 0;
     left: 0;
     width: 94vw;
-    margin-top: 4vh;
+    margin-top: 15vh;
     margin-left: 3vw;
     background-color: rgba(0, 0, 0, 0.692);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .invis{
     display: none;
