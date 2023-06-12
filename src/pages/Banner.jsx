@@ -4,6 +4,7 @@ import "../css/Banner.css";
 
 export default function Banner(props) {
   return (
+    <section id="home">
     <div className="banner bg-white w-full h-screen mt-[-77.8125px]">
 
       {/* Background Video */}
@@ -60,5 +61,6 @@ export default function Banner(props) {
         </div>
       </div>
     </div>
+</section>
   );
 }

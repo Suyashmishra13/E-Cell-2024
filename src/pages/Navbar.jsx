@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../css/Navbar.css";
-
+import { Link } from 'react-scroll';
 export default function Header(props) {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -42,7 +42,7 @@ export default function Header(props) {
   
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2 z-50"
+            className="HAMBURGER-ICON space-y-2 z-50 cursor-pointer"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
               
@@ -53,7 +53,7 @@ export default function Header(props) {
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <div
-              className="absolute top-7 right-8 px-8 py-8"
+              className="absolute top-7 right-8 px-8 py-8 cursor-pointer"
               onClick={() => setIsNavOpen(false)}
             >
                  
@@ -70,22 +70,42 @@ export default function Header(props) {
               </svg>
             </div>
            
-          <ul className="flex flex-col items-center justify-between min-h-[250px] text-[#0060A1]"  >
-            {props.pages.map((val,e)=>(
-              <li className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl text-[#0060A1]">
-              <a href="/HOME" class="mobile">{val.title}</a>
-            </li>
-            ))}
+          <ul className="flex flex-col items-center justify-between min-h-[250px] text-[#0060A1] overflow-y-auto mobile-menu">
+              {props.pages.map((val, index) => (
+                <li
+                  className="border-b border-slate-100 my-8 uppercase font-semibold text-slate-100 text-xl text-[#0060A1] mobile"
+                  key={index}
+                >
+                   <Link
+                to={val.title.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust this offset if necessary
+                duration={500} // Adjust the scrolling duration if necessary
+                onClick={() => setIsNavOpen((prev) => !prev)}
+              >
+                {val.title}
+              </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </section>
 
-       <ul className="DESKTOP-MENU hidden space-x-12 lg:flex text-white" >
-       {props.pages.map((val,e)=>(
-        <li className="text-xl font-semibold text-stone-950 text-white">
-        <a href="/HOME" class="desktop">{val.title}</a>
-      </li>
-        ))}
+        <ul className="DESKTOP-MENU hidden space-x-12 lg:flex text-white">
+          {props.pages.map((val, index) => (
+            <li className="text-xl font-semibold text-stone-950 desktop" key={index}>
+              <Link
+                to={val.title.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust this offset if necessary
+                duration={500} // Adjust the scrolling duration if necessary
+              >
+                {val.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
       <style>{`
@@ -107,79 +127,7 @@ export default function Header(props) {
         align-items: center;
       }
      
-.desktop  {
-        color: white;
-        background-image: linear-gradient(
-          to right,
-          #0060A1,
-          #0060A1 50%,
-          #000 50%
-        );
-        background-size: 200% 100%;
-        background-position: -100%;
-        display: inline-block;
-        padding: 5px 0;
-        position: relative;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .desktop:before {
-        content: '';
-        background: #54b3d6;
-        display: block;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 0;
-        height: 3px;
-        transition: all 0.3s ease-in-out;
-      }
-      
-     .desktop:hover {
-       background-position: 0;
-      }
-      
-      .desktop:hover::before {
-        width:100%;
-      }
-      .mobile {
-        background-image: linear-gradient(
-          to right,
-          #54b3d6,
-          #54b3d6 50%,
-          #ffffff 50%
-        );
-        background-size: 200% 100%;
-        background-position: -100%;
-        display: inline-block;
-        padding: 5px 0;
-        position: relative;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .mobile:before {
-        content: '';
-        background: #54b3d6;
-        display: block;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 0;
-        height: 3px;
-        transition: all 0.3s ease-in-out;
-      }
-      
-     .mobile:hover {
-       background-position: 0;
-      }
-      
-      .mobile:hover::before {
-        width:100%;
-      }
+
 
     `}</style>
     </div>

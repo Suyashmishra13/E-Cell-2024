@@ -1,60 +1,37 @@
 {
     "description": "Lorem ipsum dolor sit amet. Est commodi voluptatem quo rerum eligendi id adipisci velit? Qui ipsa explicabo nam dolor maiores ut optio porro quo maiores exercitationem. Est corrupti enim et consequatur labore eos explicabo",
-    "facebook": "https://www.facebook.com/",
-    "twitter": "https://twitter.com/",
-    "instagram": "https://www.instagram.com/",
-    "pages1" : [
+      "linkedin": "https://www.linkedin.com/company/sesc-iiti/mycompany/",
+    "twitter": "https://twitter.com/ecell_iiti?lang=en",
+    "instagram": "https://www.instagram.com/ecelliitindore/",
+    "pages1": [
         {
-            "title": "About Us",
-            "link": "/about-us"
+            "title": "HOME"
         },
         {
-            "title": "Events",
-            "link": "/events"
+            "title": "ABOUT"
         },
         {
-            "title": "Recent Events",
-            "link": "/events/#recent-events"
+            "title": "INITIATIVES"
         },
         {
-            "title": "Upcoming Events",
-            "link": "/events/#upcoming-events"
+            "title": "EVENTS"
         },
         {
-            "title": "Blogs",
-            "link": "/blogs"
+            "title": "GALLERY"
         },
         {
-            "title": "Gallery",
-            "link": "/gallery"
+            "title": "TEAM"
+        },
+        {
+            "title": "BLOGS"
+        },
+        {
+            "title": "CONTACT"
         }
+    
     ],
-    "pages2" : [
-        {
-            "title": "About Us",
-            "link": "/about-us"
-        },
-        {
-            "title": "Events",
-            "link": "/events"
-        },
-        {
-            "title": "Recent Events",
-            "link": "/events/#recent-events"
-        },
-        {
-            "title": "Upcoming Events",
-            "link": "/events/#upcoming-events"
-        },
-        {
-            "title": "Blogs",
-            "link": "/blogs"
-        },
-        {
-            "title": "Gallery",
-            "link": "/gallery"
-        }
-    ],
+
+    
     "contact_info":[
         {
             "title": "Address",

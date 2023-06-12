@@ -1,8 +1,10 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import {  FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-scroll';
 
 export default function Footer(props) {
   return (
+     <section id="contact">
     <footer className="bg-black py-8 px-4 sm:px-8 lg:px-16 xl:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 items-center">
@@ -18,9 +20,9 @@ export default function Footer(props) {
               {props.description}
             </p>
             <div className="flex space-x-4">
-              <a href={props.facebook} target="_blank">
+             <a href={props.linkedin} target="_blank">
                 <div className="w-10 h-10 rounded-full bg-[#d9d9d9] flex items-center justify-center">
-                  <FaFacebook className="text-black text-xl" />
+                  <FaLinkedin className="text-black text-xl" />
                 </div>
               </a>
               <a href={props.twitter} target="_blank">
@@ -35,18 +37,17 @@ export default function Footer(props) {
               </a>
             </div>
           </div>
-          <div className="flex flex-col space-y-2">
-            {props.pages1.map((page, e) => (
-              <a key={e} href={page.link} className="text-white hover:text-gray-400 font-semibold">
-                {page.title}
-              </a>
-            ))}
-          </div>
-          <div className="flex flex-col space-y-2">
-            {props.pages2.map((page, e) => (
-              <a key={e} href={page.link} className="text-white hover:text-gray-400 font-semibold">
-                {page.title}
-              </a>
+           <div className="flex flex-col space-y-2 text-white font-mono">
+            {props.pages1.map((val, index) => (
+              <Link
+              to={val.title.toLowerCase()}
+              spy={true}
+              smooth={true}
+              offset={-70} // Adjust this offset if necessary
+              duration={500} // Adjust the scrolling duration if necessary
+            >
+              {val.title}
+            </Link>
             ))}
           </div>
           <div className="flex flex-col space-y-2">
@@ -63,5 +64,6 @@ export default function Footer(props) {
         </div>
       </div>
     </footer>
+</section>
   );
 }

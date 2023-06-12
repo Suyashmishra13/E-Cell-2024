@@ -4,6 +4,7 @@ import {FaArrowLeft , FaArrowRight ,FaWindowClose} from "react-icons/fa";
 function App(props) {
    
     return (
+       <section id="events">
         <div className="bg-gradient-to-b from-[#00538169] via-[#3282B885] to-[#1B262CCC]">
          
         <div className="flex flex-col justify-center items-center">
@@ -58,6 +59,7 @@ function App(props) {
             </div>
         </div>
         </div>
+</section>
     )
 };
 
