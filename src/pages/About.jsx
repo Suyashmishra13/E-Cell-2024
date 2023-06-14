@@ -21,21 +21,21 @@ export default function About(props) {
     >
       <div className="aboutContainer fluid justify-center items-center max-w-[70vw] mx-auto text-center">
         <div className="overflow-hidden p-1">
-          <h1 className="aboutHeading font-['Inter'] font-bold text-5xl -tracking-[0.04em] text-black capitalize leading-10">
+          <h1 className="aboutHeading font-['Inter'] font-bold text-5xl -tracking-[0.04em] text-black capitalize leading-10 ">
             E-CELL <span className="text-[#0060A1]">IIT INDORE</span>
           </h1>
         </div>
-        <div className="aboutContent font-['Inter'] font-semibold text-2xl -tracking-[0.04em] leading-[30px] mt-8 overflow-hidden mb-20">
+        <div className="aboutContent font-['Inter'] font-semibold text-2xl -tracking-[0.04em] leading-[30px] mt-8 overflow-hidden mb-20 wow animate__animated animate__fadeInUpBig">
           <p className="para1 text-[#1B262C] font-normal">
          {props.content1}
           </p>
         </div>
         <div className="overflow-hidden p-1">
-          <h1 className="aboutHeading font-['Inter'] font-bold text-5xl -tracking-[0.04em] text-black capitalize">
+          <h1 className="aboutHeading font-['Inter'] font-bold text-5xl -tracking-[0.04em] text-black capitalize wow animate__animated animate__fadeInUpBig">
             OUR <span className="text-[#0060A1]">VISION</span>
           </h1>
         </div>
-        <div className="aboutContent font-['Inter'] font-semibold text-2xl -tracking-[0.04em] leading-[30px] mt-8 overflow-hidden">
+        <div className="aboutContent font-['Inter'] font-semibold text-2xl -tracking-[0.04em] leading-[30px] mt-8 overflow-hidden wow animate__animated animate__fadeInUpBig">
           <p className="para1 text-[#1B262C] font-normal">
           {props.content2}
           </p>

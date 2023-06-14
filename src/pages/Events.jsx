@@ -7,14 +7,14 @@ function App(props) {
        <section id="events">
         <div className="bg-gradient-to-b from-[#00538169] via-[#3282B885] to-[#1B262CCC]">
          
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center wow animate__animated animate__fadeInUpBig">
             <h1 className="text-center pt-10 pb-28 text-6xl font-semibold">RECENT <span className="text-[#0060a1]">EVENTS</span></h1>
 
             <div className="flex justify-center items-center w-full lg:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 px-8 pb-32 md:px-32 ">
                     {props.recent.map((val,e)=>(
                            
-                        <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
+                        <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl wow animate__animated animate__fadeInUpBig">
                         
                         <div className="h-96 w-full">
                             <img  className ="h-full w-full object-cover transition-transform duration-500 delay-3000" src={val.img} alt="img" />
@@ -35,12 +35,13 @@ function App(props) {
             </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-            <h1 className="text-center py-16 text-6xl font-semibold">UPCOMING <span className="text-[#0060a1]">EVENTS</span></h1>
+            <h1 className="text-center py-16 text-6xl font-semibold wow animate__animated animate__fadeInUpBig">UPCOMING <span className="text-[#0060a1]">EVENTS</span></h1>
 
             <div className="w-full">
                 <div className="grid  pb-32 ">
                 {props.upcoming.map((val,e)=>(
-                     <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl">
+                     <div className="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow rounded-3xl wow animate__animated animate__fadeInUpBig
+                     ">
                      <div className="h-full w-full">
                          <img  className ="h-full w-full object-cover transition-transform duration-500 delay-500 group-hover:bg-opacity-0.1" src={val.img} alt="" />
                      </div>

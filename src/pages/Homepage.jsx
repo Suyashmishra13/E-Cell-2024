@@ -15,6 +15,7 @@ import AboutData from "../data/About.json"
 import EventsData from "../Events.json"
 import BlogsData from '../data/Blogs.json';
 
+
 export default function Homepage(){
     return(
         <>
@@ -24,7 +25,7 @@ export default function Homepage(){
         {/* <Initiatives/> */}
         <Events {...EventsData}/>
         <Gallery/>
-        <Blogs {...BlogsData}/>
+        <Blogs {...BlogsData} />
         </>
     )
 }

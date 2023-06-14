@@ -5,11 +5,13 @@ import Team from "./pages/Team";
 import Footer from "./pages/Footer";
 import Homepage from "./pages/Homepage";
 import BlogsPage from "./pages/BlogsPage";
-
+// import AOS from 'aos'
+// import "aos/dist/aos.css" from 'aos'
 import FooterData from "./data/Footer.json";
 import BlogsPage2 from "./pages/BlogsPage2";
 
 function App() {
+
   return (
     <>
 
