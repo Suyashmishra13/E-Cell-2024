@@ -13,7 +13,7 @@ const Team = () => {
                 </div>
                 <section>
 
-                    <div className='grid  grid-cols-3 md:grid-cols-5 gap-10 py-5 ' >
+                    <div className='grid grid-cols-3 md:grid-cols-5 grid-auto-fit gap-10 py-5 ' >
                         <div></div>
 
                         <PeopleCard />
@@ -25,12 +25,12 @@ const Team = () => {
                 </section>
                 <section>
 
-                    <div className=' grid grid-cols-1 md:grid-cols-3 gap-10 py-5'>
+                    <div className=' grid grid-cols-1 md:grid-cols-3 grid-auto-fit gap-10 py-5'>
                         <div></div>
                         <PeopleCard />
                         <div></div>
                     </div>
-                    <div className=' grid grid-cols-1 md:grid-cols-3 gap-10 py-5'>
+                    <div className=' grid grid-cols-1 md:grid-cols-3 grid-auto-fit gap-10 py-5'>
                         <div></div>
                         <PeopleCard />
                         <div></div>
@@ -38,7 +38,7 @@ const Team = () => {
                 </section>
                 <section>
 
-                    <div className=' grid grid-cols-2 md:grid-cols-6 gap-12 py-5'>
+                    <div className=' grid grid-cols-2 md:grid-cols-6 grid-auto-fit gap-12 py-5'>
                         <div></div>
 
                         <PeopleCard />
@@ -50,7 +50,7 @@ const Team = () => {
                     </div>
 
                     <h3 className='text-white text-center font-bold pt-10'>Marketing Team</h3>
-                    <div className=' grid grid-cols-2 md:grid-cols-6 gap-12 py-5'>
+                    <div className=' grid grid-cols-2 md:grid-cols-6 grid-auto-fit gap-12 py-5'>
                         <div></div>
 
                         <PeopleCard />
@@ -62,7 +62,7 @@ const Team = () => {
                     </div>
                     <h3 className='text-white text-center font-bold pt-10'>Social Media Team</h3>
 
-                    <div className=' grid grid-cols-2 md:grid-cols-6 gap-12 py-5'>
+                    <div className=' grid grid-cols-2 md:grid-cols-6 grid-auto-fit gap-12 py-5'>
                         <div></div>
 
                         <PeopleCard />
@@ -74,7 +74,7 @@ const Team = () => {
                     </div>
                     <h3 className='text-white text-center font-bold pt-10'>Content Team</h3>
 
-                    <div className=' grid grid-cols-2 md:grid-cols-6 gap-12 py-5'>
+                    <div className=' grid grid-cols-2 md:grid-cols-6 grid-auto-fit gap-12 py-5'>
                         <div></div>
 
                         <PeopleCard />
@@ -86,7 +86,7 @@ const Team = () => {
                     </div>
                     <h3 className='text-white text-center font-bold pt-10'>Web Development Team</h3>
 
-                    <div className=' grid grid-cols-2 md:grid-cols-6 gap-12 py-5'>
+                    <div className=' grid grid-cols-2 md:grid-cols-6 grid-auto-fit gap-12 py-5'>
                         <div></div>
 
                         <PeopleCard />
